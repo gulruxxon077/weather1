@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./CLIMA.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+}
+.container .card-l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.418);
+}
+.container .card-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    background:rgba(192, 192, 192, 0.054);
+}
+.container .card-r .c_name{
+    font-size: 30px;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    margin: 2rem;
+
+}
+.container .card-r .date{
+    font-size: 22px;
+    position: relative;
+    left: -2rem;
+    color:white;
+}
+.container .card-r .temp{
+    font-size: 110px;
+    font-family: sans-serif;
+color:white;
+text-shadow: 1px -3px 1px rgba(0,0,0);
+}
+.container .card-r .temp span{
+    font-size: 70px;
+    font-family: sans-serif;
+color:white;
+}
+.container .card-r .wt{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+}
+.container .card-r .wt-type{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    margin: 12px;
+   color:white;
+}
+.container .card-l #sbox{
+    width: 280px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 4px 12px;
+    font-size: 19px;
+    border-bottom: 4px solid rgba(255,115,0);
+    transition: 0.2s ease;
+    border-radius: 5px;
+    background: rgba(204,204,204,0.438);
+    color: white;
+}
+.container .card-l #sbox:focus{
+    border-bottom:7px solid crimson;
+
+}
+::placeholder{
+    color:white;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:576px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./CLIMA.jpg);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .card-l{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.418);
+        order: 5;
+    }
+    .container .card-r{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        flex-direction: column;
+        background:rgba(192, 192, 192, 0.054);
+    }
+    .container .card-r .c_name{
+        font-size: 30px;
+        color:white;
+        font-family: 'Oswald', sans-serif;
+        margin: 2rem;
+    
+    }
+    .container .card-r .date{
+        font-size: 22px;
+        position: relative;
+        left: -2rem;
+        color:white;
+    }
+    .container .card-r .temp{
+        font-size: 110px;
+        font-family: sans-serif;
+    color:white;
+    text-shadow: 1px -3px 1px rgba(0,0,0);
+    }
+    .container .card-r .temp span{
+        font-size: 70px;
+        font-family: sans-serif;
+    color:white;
+    }
+    .container .card-r .wt{
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 8px;
+    
+    }
+    .container .card-r .wt-type{
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 8px;
+        margin: 12px;
+       color:white;
+    }
+    .container .card-l #sbox{
+        width: 280px;
+        height: 45px;
+        border: none;
+        outline: none;
+        padding: 4px 12px;
+        font-size: 19px;
+        border-bottom: 4px solid rgba(255,115,0);
+        transition: 0.2s ease;
+        border-radius: 5px;
+        background: rgba(204,204,204,0.438);
+        color: white;
+        position: relative;
+        top: -2rem;
+    }
+    .container .card-l #sbox:focus{
+        border-bottom:7px solid crimson;
+    
+    }
+    ::placeholder{
+        color:white;
+        text-transform: uppercase;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
